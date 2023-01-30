@@ -1,0 +1,17 @@
+[
+  {
+    "id": "a1",
+    "author": "Author 1",
+    "idMovies": "m1"
+  },
+  {
+    "id": "a2",
+    "author": "Author 2",
+    "idMovies": "m2"
+  },
+  {
+    "id": "a3",
+    "author": "Author 3",
+    "idMovies": "m3"
+  }
+]

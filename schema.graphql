@@ -1,0 +1,32 @@
+type Query {
+    greeting: String
+    movies: [Movies]
+    actors: [Actors]
+    authors: [Authors]
+}
+type Mutation {
+    createMovies(titleMovies: String, descriptionMovies: String): Movies!,
+        deleteMovies(id: ID!): [Movies],
+        updateMovies(id: ID!, titleMovies: String!, descriptionMovies: String!): [Movies],
+    createActors(actor: String, idMovies: String): Actors!,
+        deleteActors(id: ID!): [Actors],
+        updateActors(id: ID!, actor: String!, idMovies: String!): [Actors],
+    createAuthors(author: String, idMovies: String): Authors!,
+        deleteAuthors(id: ID!): [Authors],
+        updateAuthors(id: ID!, actor: String!, idMovies: String!): [Authors]
+}
+type Movies {
+    id: ID!
+    titleMovies: String
+    descriptionMovies: String
+}
+type Actors {
+    id: ID!
+    actor: String
+    idMovies: String
+}
+type Authors {
+    id: ID!
+    author: String
+    idMovies: String
+}
